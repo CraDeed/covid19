@@ -12,7 +12,6 @@ const App = () => {
 
     const onHandleCountry = useCallback((e) => {
         const select = countries.filter((v) => v.Country === e.target.value)[0];
-        console.log(select);
         const countryIso = select.ISO2;
         const countryName = select.Country;
         SetSelectCountry(countryIso);
